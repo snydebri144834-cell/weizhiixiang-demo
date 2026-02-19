@@ -8,7 +8,7 @@ import os
 # 1. 基础设置与数据加载
 # ==========================================
 st.set_page_config(page_title="味知选-智能选址决策系统", layout="wide", page_icon="🏪")
-plt.rcParams['font.sans-serif'] = ['SimHei', 'Microsoft YaHei']
+plt.rcParams['font.sans-serif'] = ['SimHei', 'Microsoft YaHei', 'WenQuanYi Zen Hei']
 plt.rcParams['axes.unicode_minus'] = False
 
 @st.cache_data
@@ -206,3 +206,4 @@ else:
     st.markdown("### 📂 历史门店数据库")
     # 只展示前5行预览
     st.dataframe(df.head(5))
+
